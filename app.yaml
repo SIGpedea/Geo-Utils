@@ -1,0 +1,19 @@
+service: default
+runtime: python37
+
+basic_scaling:
+    max_instances: 2
+    idle_timeout: 10m
+    
+
+resources:
+  cpu: 2
+  memory_gb: 1
+  disk_size_gb: 10
+
+runtime_config:
+  document_root: .
+  skip_lockdown_document_root: true
+  
+entrypoint: gunicorn app:server
+

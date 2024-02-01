@@ -1,0 +1,11 @@
+dash
+dash_bootstrap_components
+dash_bootstrap_templates
+dash_uploader
+Fiona
+geocoder
+geopandas
+geopy
+pandas
+gunicorn
+packaging
